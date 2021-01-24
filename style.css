@@ -167,3 +167,73 @@ section.hero .hero_content h2 {
         font-size: 4.7rem;
     }
 }
+
+@media screen and (min-width:960px) {
+    nav.main_nav {
+        padding: 2% 10%;
+    }
+    nav.main_nav .logo {
+        width: 20%;
+    }
+    nav.main_nav .logo img {
+        width: 70%;
+    }
+    nav.main_nav .toggle_nav {
+        width: 10%;
+        display: none;
+    }
+    nav.main_nav .nav_links {
+        display: block;
+        width: 40%;
+        color: var(--White);
+        font-family: 'Alata', sans-serif;
+    }
+    nav.main_nav .nav_links ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav.main_nav .nav_links ul li {
+        list-style: none;
+        font-size: 1.8rem;
+    }
+    nav.main_nav .nav_links ul li a {
+        color: var(--White);
+        text-decoration: none;
+        position: relative;
+    }
+    nav.main_nav .nav_links ul li a::before {
+        content: '';
+        width: 0;
+        display: block;
+        bottom: -4px;
+        position: absolute;
+        height: 3px;
+        background-color: var(--White);
+        transition: width 1s ease-in-out;
+    }
+    nav.main_nav .nav_links ul li a:hover::before {
+        width: 100%;
+    }
+    section.hero {
+        width: 100%;
+        padding: 10% 10%;
+        background-image: url('images/desktop/image-hero.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    section.hero .hero_content {
+        width: 50%;
+        border: solid 1px white;
+        padding: 8% 2%;
+        /* font-family: 'Alata', sans-serif; */
+        font-family: 'Josefin Sans', sans-serif;
+        color: var(--White);
+        text-transform: uppercase;
+    }
+    section.hero .hero_content h2 {
+        font-weight: 300;
+        font-size: 4.4rem;
+    }
+}
