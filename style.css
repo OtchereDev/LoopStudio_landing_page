@@ -56,15 +56,6 @@ nav.side_bar .logo .logo_img {
     align-items: center;
 }
 
-
-/* nav.side_bar .logo .logo_img a {
-    width: 100%;
-}
-
-nav.side_bar .logo .logo_img a img {
-    width: 70%;
-} */
-
 nav.side_bar .logo .close {
     width: 10%;
     display: flex;
@@ -110,4 +101,40 @@ nav.side_bar .nav_links ul li a {
     text-decoration: none;
     color: var(--White);
     font-weight: 400;
+}
+
+nav.main_nav {
+    width: 100%;
+    padding: 5% 8%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Black);
+}
+
+nav.main_nav .logo {
+    width: 50%;
+}
+
+nav.main_nav .logo img {
+    width: 70%;
+}
+
+nav.main_nav .toggle_nav {
+    width: 10%;
+}
+
+nav.main_nav .toggle_nav a {
+    width: 100%;
+}
+
+nav.main_nav .toggle_nav a img {
+    width: 50%;
+}
+
+nav.main_nav .nav_links {
+    display: none;
 }
