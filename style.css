@@ -1,0 +1,87 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark_Gray: hsl(0, 0%, 55%);
+    --Very_Dark_Gray: hsl(0, 0%, 41%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    position: relative;
+}
+
+nav.side_bar {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--Black);
+    padding: 10% 5%;
+    color: var(--White);
+}
+
+nav.side_bar .logo {
+    margin-bottom: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.side_bar .logo .logo_img {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+
+/* nav.side_bar .logo .logo_img a {
+    width: 100%;
+}
+
+nav.side_bar .logo .logo_img a img {
+    width: 70%;
+} */
+
+nav.side_bar .logo .close {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav.side_bar .logo .close img {
+    width: 70%;
+}
+
+nav.side_bar .nav_links {
+    width: 100%;
+}
+
+nav.side_bar .nav_links ul {
+    width: 100%;
+}
+
+nav.side_bar .nav_links ul li {
+    list-style: none;
+    font-size: 3.5rem;
+    margin-bottom: 5%;
+}
+
+nav.side_bar .nav_links ul li a {
+    text-decoration: none;
+    color: var(--White);
+}
