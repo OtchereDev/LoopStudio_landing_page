@@ -218,15 +218,15 @@ section.hero .hero_content h2 {
     }
     section.hero {
         width: 100%;
-        padding: 10% 10%;
+        padding: 8% 10% 5% 10%;
         background-image: url('images/desktop/image-hero.jpg');
         background-size: cover;
         background-repeat: no-repeat;
     }
     section.hero .hero_content {
-        width: 50%;
-        border: solid 1px white;
-        padding: 8% 2%;
+        width: 40%;
+        border: solid 3px white;
+        padding: 4% 2%;
         /* font-family: 'Alata', sans-serif; */
         font-family: 'Josefin Sans', sans-serif;
         color: var(--White);
@@ -234,6 +234,6 @@ section.hero .hero_content h2 {
     }
     section.hero .hero_content h2 {
         font-weight: 300;
-        font-size: 4.4rem;
+        font-size: 5rem;
     }
 }
