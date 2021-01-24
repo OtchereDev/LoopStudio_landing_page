@@ -20,6 +20,7 @@ html {
 body {
     width: 100%;
     position: relative;
+    overflow-x: hidden;
 }
 
 nav.side_bar {
@@ -27,10 +28,18 @@ nav.side_bar {
     height: 100vh;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -100%;
     background-color: var(--Black);
     padding: 10% 5%;
     color: var(--White);
+    /* font-family: 'Alata', sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    transition: left 2s ease-in-out;
+}
+
+nav.open {
+    left: 0%;
 }
 
 nav.side_bar .logo {
@@ -79,9 +88,26 @@ nav.side_bar .nav_links ul li {
     list-style: none;
     font-size: 3.5rem;
     margin-bottom: 5%;
+    position: relative;
+}
+
+nav.side_bar .nav_links ul li::before {
+    content: "";
+    width: 0px;
+    display: block;
+    bottom: -4px;
+    position: absolute;
+    height: 5px;
+    background-color: var(--White);
+    transition: width 1s ease-in-out;
+}
+
+nav.side_bar .nav_links ul li:hover::before {
+    width: 134px;
 }
 
 nav.side_bar .nav_links ul li a {
     text-decoration: none;
     color: var(--White);
+    font-weight: 400;
 }
