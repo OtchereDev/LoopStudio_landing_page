@@ -297,6 +297,71 @@ section.creation .load_more {
     border: 2px solid var(--Black);
 }
 
+footer {
+    width: 100%;
+    background-color: var(--Black);
+    padding: 10% 0;
+    color: var(--White);
+    font-family: 'Alata', sans-serif;
+}
+
+footer .footer_left {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+footer .footer_left .logo {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer_left .logo img {
+    width: 70%;
+}
+
+footer .footer_left .links {
+    width: 100%;
+}
+
+footer .footer_left .links ul {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+footer .footer_left .links ul li {
+    list-style: none;
+    font-size: 1.5rem;
+    margin-top: 2%;
+}
+
+footer .footer_left .links ul li a {
+    text-decoration: none;
+    color: var(--White);
+}
+
+footer .footer_right {
+    width: 100%;
+}
+
+footer .footer_right .socials {
+    width: 40%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer_right .copyright {
+    width: 60%;
+    margin: 3% auto;
+    font-size: 1.2rem;
+}
+
 @media screen and (min-width: 400px) {
     section.hero .hero_content h2 {
         font-size: 4.7rem;
