@@ -81,10 +81,9 @@ nav.side_bar .nav_links ul li {
     list-style: none;
     font-size: 3.5rem;
     margin-bottom: 5%;
-    position: relative;
 }
 
-nav.side_bar .nav_links ul li::before {
+nav.side_bar .nav_links ul li a::before {
     content: "";
     width: 0px;
     display: block;
@@ -95,14 +94,15 @@ nav.side_bar .nav_links ul li::before {
     transition: width 1s ease-in-out;
 }
 
-nav.side_bar .nav_links ul li:hover::before {
-    width: 134px;
+nav.side_bar .nav_links ul li a:hover::before {
+    width: 100%;
 }
 
 nav.side_bar .nav_links ul li a {
     text-decoration: none;
     color: var(--White);
     font-weight: 400;
+    position: relative;
 }
 
 nav.main_nav {
@@ -153,7 +153,6 @@ section.hero .hero_content {
     width: 100%;
     border: solid 1px white;
     padding: 8% 2%;
-    /* font-family: 'Alata', sans-serif; */
     font-family: 'Josefin Sans', sans-serif;
     color: var(--White);
     text-transform: uppercase;
@@ -216,7 +215,7 @@ section.creation h2 {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 10%;
-    font-weight: 400;
+    font-weight: 300;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -286,7 +285,7 @@ section.creation .gallery .single_gallery.eight {
 section.creation .load_more {
     width: 40%;
     padding: 3% 5%;
-    margin: 5% auto 5% auto;
+    margin: 8% auto 30% auto;
     text-transform: uppercase;
     font-family: 'Alata', sans-serif;
     display: block;
@@ -308,7 +307,6 @@ footer {
 footer .footer_left {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 
 footer .footer_left .logo {
