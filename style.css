@@ -510,7 +510,7 @@ footer .footer_right .copyright {
         width: 100%;
         padding: 1% 10%;
         position: relative;
-        margin: 10% auto;
+        margin: 3% auto 10% auto;
     }
     section.creation h2 {
         font-size: 4.5rem;
@@ -527,6 +527,7 @@ footer .footer_right .copyright {
     section.creation .gallery .single_gallery {
         width: 22%;
         height: 320px;
+        cursor: pointer;
     }
     section.creation .gallery .single_gallery h4 {
         margin: auto auto 8% 8%;
@@ -537,14 +538,25 @@ footer .footer_right .copyright {
         width: 30%;
     }
     section.creation .gallery .single_gallery.grid {
-        background-color: var(--White);
-        background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('images/desktop/image-grid.jpg');
+        background-image: url('images/desktop/image-grid.jpg');
+    }
+    section.creation .gallery .single_gallery.grid:hover {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/desktop/image-grid.jpg');
     }
     section.creation .gallery .single_gallery.one {
         background-image: url('images/desktop/image-deep-earth.jpg');
     }
+    section.creation .gallery .single_gallery.one:hover {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/desktop/image-deep-earth.jpg');
+    }
     section.creation .gallery .single_gallery.two {
         background-image: url('images/desktop/image-night-arcade.jpg');
+    }
+    section.creation .gallery .single_gallery.two:hover {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/desktop/image-night-arcade.jpg');
+    }
+    section.creation .gallery .single_gallery.three:hover {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/desktop/image-soccer-team.jpg');
     }
     section.creation .gallery .single_gallery.three {
         background-image: url('images/desktop/image-soccer-team.jpg');
@@ -552,14 +564,26 @@ footer .footer_right .copyright {
     section.creation .gallery .single_gallery.five {
         background-image: url('images/desktop/image-from-above.jpg');
     }
+    section.creation .gallery .single_gallery.five:hover {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/desktop/image-from-above.jpg');
+    }
     section.creation .gallery .single_gallery.six {
         background-image: url('images/desktop/image-pocket-borealis.jpg');
+    }
+    section.creation .gallery .single_gallery.six:hover {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/desktop/image-pocket-borealis.jpg');
     }
     section.creation .gallery .single_gallery.seven {
         background-image: url('images/desktop/image-curiosity.jpg');
     }
+    section.creation .gallery .single_gallery.seven:hover {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/desktop/image-curiosity.jpg');
+    }
     section.creation .gallery .single_gallery.eight {
         background-image: url('images/desktop/image-fisheye.jpg');
+    }
+    section.creation .gallery .single_gallery.eight:hover {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('images/desktop/image-fisheye.jpg');
     }
     section.creation .load_more {
         position: absolute;
