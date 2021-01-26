@@ -178,7 +178,7 @@ section.info .info_contentt {
 section.info .info_contentt .left {
     width: 100%;
     background-image: url('images/mobile/image-interactive.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 40%;
 }
@@ -187,6 +187,7 @@ section.info .info_contentt .right {
     width: 100%;
     height: 50%;
     padding: 8% 5%;
+    background-color: var(--White);
 }
 
 section.info .info_contentt .right h2 {
@@ -399,6 +400,7 @@ footer .footer_right .copyright {
     width: 60%;
     margin: 3% auto;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 @media screen and (min-width: 400px) {
@@ -466,7 +468,6 @@ footer .footer_right .copyright {
         width: 40%;
         border: solid 3px white;
         padding: 4% 2%;
-        /* font-family: 'Alata', sans-serif; */
         font-family: 'Josefin Sans', sans-serif;
         color: var(--White);
         text-transform: uppercase;
@@ -474,5 +475,35 @@ footer .footer_right .copyright {
     section.hero .hero_content h2 {
         font-weight: 300;
         font-size: 5rem;
+    }
+    section.info {
+        width: 100%;
+        padding: 5% 10%;
+        height: auto;
+    }
+    section.info .info_contentt {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        height: 450px;
+    }
+    section.info .info_contentt .left {
+        grid-column: 1/9;
+        grid-row: 1/9;
+        background-image: url('images/desktop/image-interactive.jpg');
+        height: 100%;
+    }
+    section.info .info_contentt .right {
+        height: auto;
+        grid-row: 5/9;
+        grid-column: 8/12;
+        padding: 10% 7%;
+    }
+    section.info .info_contentt .right h2 {
+        font-size: 3rem;
+    }
+    section.info .info_contentt .right h5 {
+        font-size: 1.2rem;
     }
 }
