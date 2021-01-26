@@ -506,4 +506,67 @@ footer .footer_right .copyright {
     section.info .info_contentt .right h5 {
         font-size: 1.2rem;
     }
+    section.creation {
+        width: 100%;
+        padding: 1% 10%;
+        position: relative;
+        margin: 10% auto;
+    }
+    section.creation h2 {
+        font-size: 4.5rem;
+        text-align: left;
+        margin-bottom: 2%;
+    }
+    section.creation .gallery {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    section.creation .gallery .single_gallery {
+        width: 22%;
+        height: 320px;
+    }
+    section.creation .gallery .single_gallery h4 {
+        margin: auto auto 8% 8%;
+        width: 70%;
+        font-size: 2.5rem;
+    }
+    section.creation .gallery .single_gallery.grid h4 {
+        width: 30%;
+    }
+    section.creation .gallery .single_gallery.grid {
+        background-color: var(--White);
+        background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('images/desktop/image-grid.jpg');
+    }
+    section.creation .gallery .single_gallery.one {
+        background-image: url('images/desktop/image-deep-earth.jpg');
+    }
+    section.creation .gallery .single_gallery.two {
+        background-image: url('images/desktop/image-night-arcade.jpg');
+    }
+    section.creation .gallery .single_gallery.three {
+        background-image: url('images/desktop/image-soccer-team.jpg');
+    }
+    section.creation .gallery .single_gallery.five {
+        background-image: url('images/desktop/image-from-above.jpg');
+    }
+    section.creation .gallery .single_gallery.six {
+        background-image: url('images/desktop/image-pocket-borealis.jpg');
+    }
+    section.creation .gallery .single_gallery.seven {
+        background-image: url('images/desktop/image-curiosity.jpg');
+    }
+    section.creation .gallery .single_gallery.eight {
+        background-image: url('images/desktop/image-fisheye.jpg');
+    }
+    section.creation .load_more {
+        position: absolute;
+        top: 1%;
+        right: 10%;
+        width: 12%;
+        padding: 1% 2%;
+        margin: 0%;
+    }
 }
