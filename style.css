@@ -295,6 +295,7 @@ section.creation .load_more {
     font-size: 1.5rem;
     letter-spacing: 3px;
     border: 2px solid var(--Black);
+    cursor: pointer;
 }
 
 footer {
@@ -592,5 +593,47 @@ footer .footer_right .copyright {
         width: 12%;
         padding: 1% 2%;
         margin: 0%;
+    }
+    footer {
+        padding: 2% 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    footer .footer_left {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+    footer .footer_left .logo {
+        width: 70%;
+        margin: auto 0;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+    }
+    footer .footer_left .logo img {
+        width: 70%;
+    }
+    footer .footer_left .links {
+        width: 80%;
+    }
+    footer .footer_left .links ul {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .footer_right {
+        width: 40%;
+    }
+    footer .footer_right .socials {
+        width: 40%;
+        margin: 5% 0 5% auto;
+    }
+    footer .footer_right .copyright {
+        width: 51%;
+        margin: auto 0 auto auto;
     }
 }
